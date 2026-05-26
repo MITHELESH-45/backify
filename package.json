@@ -1,18 +1,22 @@
 {
-  "name": "backify",
+  "name": "create-backify",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Scaffold production-ready backend projects in minutes.",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "create-backify": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cli", "backend", "express", "generator"],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.6.2",
-    "commander": "^14.0.3",
-    "fs-extra": "^11.3.5",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
     "prompts": "^2.4.2"
   }
 }

@@ -9,9 +9,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export async function generateProject(answers) {
-  const { projectName, framework } = answers;
+  const { projectName, framework, architecture } = answers;
   const targetPath = path.join(process.cwd(), projectName);
-  const templatePath = path.join(__dirname, '../templates', framework);
+  const templatePath = path.join(__dirname, '../templates', framework, architecture);
 
   console.log(chalk.blue(`\nForging your backend in ${chalk.bold(targetPath)}...\n`));
 

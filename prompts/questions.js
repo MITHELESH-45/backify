@@ -20,15 +20,6 @@ export async function askQuestions() {
     },
     {
       type: 'select',
-      name: 'language',
-      message: 'Which language?',
-      choices: [
-        { title: 'TypeScript', value: 'typescript' },
-        { title: 'JavaScript', value: 'javascript' }
-      ]
-    },
-    {
-      type: 'select',
       name: 'architecture',
       message: 'Which architecture pattern?',
       choices: [
@@ -42,18 +33,14 @@ export async function askQuestions() {
       message: 'Which database?',
       choices: [
         { title: 'PostgreSQL', value: 'postgresql' },
-        { title: 'MySQL', value: 'mysql' }
+        { title: 'MongoDB', value: 'mongodb' }
       ]
     },
     {
-      type: 'select',
-      name: 'orm',
-      message: 'Which ORM do you want to use?',
-      choices: [
-        { title: 'Prisma', value: 'prisma' },
-        { title: 'Drizzle', value: 'drizzle' },
-        { title: 'None (Raw SQL)', value: 'none' }
-      ]
+      type: 'confirm',
+      name: 'useAuth',
+      message: 'Do you want to include JWT Authentication boilerplate?',
+      initial: true
     }
   ];
 

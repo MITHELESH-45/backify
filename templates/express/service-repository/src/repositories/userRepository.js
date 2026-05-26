@@ -1,0 +1,11 @@
+// Repository strictly handles data access for the User resource.
+const users = [
+  { id: 1, name: 'Alice', email: 'alice@example.com', active: true },
+  { id: 2, name: 'Bob', email: 'bob@example.com', active: false },
+  { id: 3, name: 'Carol', email: 'carol@example.com', active: true }
+];
+
+export const getAllUsers = async () => {
+  // Simulate async data access. Replace this with real DB logic later.
+  return Promise.resolve(users);
+};
